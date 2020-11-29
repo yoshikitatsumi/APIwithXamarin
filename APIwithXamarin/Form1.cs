@@ -58,5 +58,12 @@ namespace APIwithXamarin
 
             textBox3.Text = output.ToString();
         }
+
+        private async void button4_Click(object sender, EventArgs e)
+        {
+            int output = await CAPI.ReturnConfirmed(textBox1.Text);
+
+            textBox4.Text = output.ToString();
+        }
     }
 }
